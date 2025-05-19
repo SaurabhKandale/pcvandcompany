@@ -118,36 +118,36 @@
         }
       }
       .custom-nav-link:hover{
-  color: #3377c4!important;
-}
+        color: #3377c4!important;
+      }     
 
       .custom-logo{
-  width: 200px;
-}
+        width: 200px;
+      }
 
-@media (min-width: 576px) {
-  .custom-logo{
-    width: 220px;
-  }
-}
-@media (min-width: 768px) {
-  .custom-logo{
-    width: 240px;
-  }
-}
+      @media (min-width: 576px) {
+        .custom-logo{
+          width: 220px;
+        }
+      }
+      @media (min-width: 768px) {
+        .custom-logo{
+          width: 240px;
+        }
+      }
 
-@media (min-width: 992px) {
-  .custom-logo{
-    width: 260px;
-  }
-}
+      @media (min-width: 992px) {
+        .custom-logo{
+          width: 260px;
+        }
+      }
 
-@media (min-width: 1200px) {
-  .custom-logo{
-    width: 280px;
-  }
-  
-}
+      @media (min-width: 1200px) {
+        .custom-logo{
+          width: 280px;
+        }
+        
+      }
       
     </style>
     <!-- Page loading scripts-->
@@ -281,28 +281,28 @@
             <path d="M147.005 75.6331C152.135 70.7783 156.106 64.2374 159.153 57.9073C166.014 43.6372 174.127 22.1368 160.207 9.68505C152.924 3.17188 139.243 3.86644 130.324 5.29774C118.428 7.20428 107.295 8.85077 96.5031 14.783C85.8056 20.6599 79.0155 33.6997 77.0014 45.6686C75.4978 54.5776 79.63 63.6672 84.7391 70.7453C91.8208 80.5571 103.503 84.2003 114.817 84.3975C121.101 84.5081 127.716 84.0527 133.89 82.8121C138.932 81.7962 143.273 79.1597 147.005 75.6331Z" fill="#121519" fill-opacity="0.07"></path>
           </svg>
           <div class="card-body position-relative zindex-2 py-5">
-            <form class="mx-auto" style="max-width: 800px;">
+            <form id="contact-form" class="mx-auto" style="max-width: 800px;">
               <h2 class="h1 card-title text-center pb-4 text-light">Get a quick consultation</h2>
               <div class="row g-4">
                 <div class="col-sm-6">
                   <label class="form-label fs-base text-light" for="name">Name</label>
-                  <input class="form-control form-control-lg text-light" type="text" placeholder="Your name" required id="name">
+                  <input class="form-control form-control-lg text-light" type="text" name="name" placeholder="Your name" required id="name">
                 </div>
                 <div class="col-sm-6">
                   <label class="form-label fs-base text-light" for="company">Company</label>
-                  <input class="form-control form-control-lg text-light" type="text" placeholder="Your company name" id="company">
+                  <input class="form-control form-control-lg text-light" type="text" name="company" placeholder="Your company name" id="company">
                 </div>
                 <div class="col-sm-6">
                   <label class="form-label fs-base text-light" for="email">Email</label>
-                  <input class="form-control form-control-lg text-light" type="email" placeholder="Email address" required id="email">
+                  <input class="form-control form-control-lg text-light" type="email" name="email" placeholder="Email address" required id="email">
                 </div>
                 <div class="col-sm-6">
                   <label class="form-label fs-base text-light" for="phone">Phone</label>
-                  <input class="form-control form-control-lg text-light" type="text" placeholder="Phone number" id="phone">
+                  <input class="form-control form-control-lg text-light" type="text" name="phone" placeholder="Phone number" id="phone">
                 </div>
                 <div class="col-sm-12">
                   <label class="form-label fs-base text-light" for="message">How can we help?</label>
-                  <textarea class="form-control form-control-lg text-light" rows="6" placeholder="Enter your message here..." required id="message"></textarea>
+                  <textarea class="form-control form-control-lg text-light" name="message" rows="6" placeholder="Enter your message here..." required id="message"></textarea>
                 </div>
                 
                 <div class="col-sm-12 text-center pt-4">
@@ -358,6 +358,35 @@
         <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
       </svg><i class="ai-arrow-up"></i></a>
     <!-- Vendor scripts: js libraries and plugins-->
+
+    <script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    if (!formData.get('email') || !formData.get('name') || !formData.get('message') || !formData.get('company') || !formData.get('phone')) {
+      return;
+    }
+    try {
+      const response = await fetch('https://formspree.io/f/xnndrqyv', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+
+      if (response.ok) {
+        form.reset();
+      } 
+      // else {
+      //   message.textContent = 'Oops! Something went wrong.';
+      // }
+    } catch (error) {
+      // message.textContent = 'There was a problem sending your message.';
+    }
+  });
+  </script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <!-- Main theme script-->
