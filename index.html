@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PCV and Company | Chartered Accountants</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="PCV and Company - Chartered Accountants firm offering audit, taxation, compliance, and advisory services in Pune and beyond.">
+    <meta name="keywords" content="PCV, pcv and company,CA Paras Vijapure, Chartered Accountant, audit, taxation, compliance, corporate laws, financial services, advisory, GST, income tax, business consulting, company formation, accounting, financial planning, risk management, statutory audit, tax filing, legal services, Pune CA firm">  
+    <meta name="author" content="PCV and Company">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon"  sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon"  sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" color="#6366f1" href="assets/favicon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="white">
+    
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      .custom_navbar{
+        justify-content: center;
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      .nav-link{
+        color: black!important;
+      }
+
+
+.marquee-swiper {
+  height: 400px; /* Adjust height based on visible area */
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #0063c5;
+  /* white-space: nowrap; */
+}
+
+.swiper-slide a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide a:hover {
+  color: #005bb5;
+}
+
+@media (max-width:576px) {
+  .swiper-slide{
+    font-size: 13px;
+  }
+  
+}
+
+.custom-nav-link:hover{
+  color: #3377c4!important;
+}
+
+.swiper-thumbnail.active{
+  border-color: #3377c4!important;;
+}
+
+.custom-logo{
+  width: 200px;
+}
+
+@media (min-width: 576px) {
+  .custom-logo{
+    width: 220px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-logo{
+    width: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-logo{
+    width: 260px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-logo{
+    width: 280px;
+  }
+  
+}
+
+
+
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+        
+  })();  
+    </script>
+
+    
+   
+    
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <div class="">
+        <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
+        <header class="custom_navbar navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand pe-sm-3" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <image src="assets/img/pcv_logo.png" class="custom-logo" alt="pcv_logo" />
+            </span>
+            </a>
+            <a class="btn btn-info btn-md order-lg-3 d-none d-sm-inline-flex px-4" href="mailto:info@pcvandcompany.com?subject=Request%20Callback"  rel="noopener">
+              <i class="ai-mail fs-xl me-2 ms-n1"></i>Write a mail
+            </a>
+            <button class="navbar-toggler ms-sm-3 text-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon" ></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="index.html">Home</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/about-us.html">About Us</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/services.html">Services</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/contact-us.html">Contact Us</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/careers.html"><span class="badge bg-info fs-sm">We are Hiring!</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <!-- Page content-->
+      <!-- Hero-->
+      <section class="bg-light light-mode position-relative py-5 px-2 px-md-0">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: url(assets/img/landing/conference/noise.png); mix-blend-mode: soft-light; opacity: 12%"></div>
+        <div class="container position-relative zindex-2 py-md-3 py-lg-4 py-xl-5">
+          <div class="row align-items-center justify-content-center pt-5 pb-2 pb-sm-3 mt-sm-4">
+            <div class="col-10 col-sm-8 col-md-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 pb-3 pb-md-0 mb-3 mb-sm-4 mb-md-0">
+              <div class="swiper" data-swiper-options="{
+              &quot;effect&quot;: &quot;creative&quot;,
+              &quot;loop&quot;: true,
+              &quot;allowTouchMove&quot;: false,
+              &quot;speed&quot;: 450,
+              &quot;autoplay&quot;: {
+                &quot;delay&quot;: 6000,
+                &quot;disableOnInteraction&quot;: false
+              },
+              &quot;creativeEffect&quot;: {
+                &quot;prev&quot;: {
+                  &quot;shadow&quot;: true,
+                  &quot;translate&quot;: [&quot;-20%&quot;, 0, -1]
+                },
+                &quot;next&quot;: {
+                  &quot;translate&quot;: [&quot;100%&quot;, 0, 0]
+                }
+              },
+              &quot;thumbnails&quot;: {
+                &quot;el&quot;: &quot;#thumbnails&quot;,
+                &quot;images&quot;: [
+                  &quot;assets/img/banner1.jpg&quot;,
+                  &quot;assets/img/banner2.jpg&quot;,
+                  &quot;assets/img/banner3.jpg&quot;
+                ]
+              }
+            }" style="border-radius: 20%; border-bottom-right-radius: 0; border-top-left-radius: 0%;">
+                <div class="swiper-wrapper">
+                  <!-- Item-->
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden" style="border-bottom-left-radius: 20%; "><img src="assets/img/banner1.jpg" alt="Image">
+                      <div class="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100" style="height: 215px; background: linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%);">
+                        <!-- <div class="text-end pe-4 pb-4">
+                          <h3 class="h5 mb-1">Esther Howard</h3>
+                          <p class="fs-sm mb-0">VP of Strategy, Stretto Inc.</p>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden" style="border-bottom-left-radius: 20%; "><img src="assets/img/banner2.jpg" alt="Image">
+                      <div class="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100" style="height: 215px; background: linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%);">
+                        <!-- <div class="text-end pe-4 pb-4">
+                          <h3 class="h5 mb-1">Albert Flores</h3>
+                          <p class="fs-sm mb-0">Product Manager, Google</p>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden" style="border-bottom-left-radius: 20%; "><img src="assets/img/banner3.jpg" alt="Image">
+                      <div class="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100" style="height: 215px; background: linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%);">
+                        <!-- <div class="text-end pe-4 pb-4">
+                          <h3 class="h5 mb-1">Kathryn Murphy</h3>
+                          <p class="fs-sm mb-0">VP of Marketing, Glassdoor</p>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Thumbnails-->
+              <div class="swiper-thumbnails swiper-thumbnails-circle flex-nowrap justify-content-end pt-4" id="thumbnails"></div>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-5 order-md-1">
+              <h1 class="display-4 text-uppercase d-none d-lg-block pb-3 mb-4">Expert Chartered Accountancy Services You Can Trust</h1>
+              <h1 class="display-6 text-uppercase d-lg-none pb-1 pb-sm-2">Expert Chartered Accountancy Services You Can Trust</h1>
+              <p class="fs-lg pb-2 pb-sm-3 pb-md-4 pb-xl-5 mb-xl-2">Delivering personalized tax, auditing, and financial solutions to help your business and finances thrive.</p>
+              <div class="d-sm-flex"><a class="btn btn-lg btn-info w-100 w-md-auto mb-3 mb-sm-0 me-sm-3 me-lg-4" href="/contact-us.html" data-scroll data-scroll-offset="120">Connect With Us</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us -->
+      
+      <section class="px-4 px-md-0 container py-sm-2 py-md-3 py-lg-4 py-xl-5 ">
+        <div class="row align-items-center py-5">
+          <div class="col-md-6 col-lg-7 col-xxl-8 order-md-2 pb-4 pb-md-0 mb-2 mb-sm-3 mb-md-0">
+            <div class="position-relative ms-auto" style="max-width: 723px; border-radius: 40px;">
+              <img class="d-block" src="assets/img/office-gallery/office1.jpg" alt="Image"  data-aos="fade-up" data-aos-duration="400" data-aos-offset="150" style="border-radius: 40px;">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xxl-4 order-md-1">
+            <h2 class="h1 pb-md-2 pb-xl-1">About Us</h2>
+            <p class="mb-1">Founded in 2018, PCV & COMPANY. (PCV) is an integrated full service Chartered Accountants firm providing Assurance, Taxation and Advisory services for corporate and co-operative clients at domestic and international level. We are providing broad range of legal, taxation and advisory services to the commercial, industrial and financial communities. We provide all financial and legal services under one roof. our philosophy is of partnering with our clients and not being a distant service provider.</p>
+            <div class="d-flex pb-2 pb-lg-0 mb-4 mb-lg-5">
+              
+            </div><a class="btn btn-info" href="/about-us.html  ">Read more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="px-4 px-md-2 px-lg-2 px-xxl-2 container py-5 my-md-2 my-lg-3 my-xl-4 my-xxl-5">
+        <h2 class="h1 text-center">Our services</h2>
+        <p class="text-center pb-3 mb-3 mb-lg-4">With the support of independent referents, you can solve many challenges</p>
+        <div class="row align-items-center py-1 py-sm-3 py-md-4 my-lg-2">
+          <div class="p-0">
+            <div class="d-flex justify-content-center flex-column flex-md-row flex-wrap gap-4">
+              <!-- <div class="col"> -->
+                <div class="card border-0 bg-faded-info service-box"  data-aos="zoom-in" data-aos-duration="400" data-aos-offset="150">
+                  <div class="card-body" style="max-width: 410px;">
+                    <!-- <i class="ai-dashboard fs-1 text-info d-block mb-3"></i> -->
+                    <img class="rounded-2 mb-3" src="/assets/img/audit_and_assurance.jpg" alt="audit_and_assurance" />
+                    <h3 class="h4">Audit and Assurance</h3>
+                    <p class="fs-sm">Audit and assurance services at PCV and Company ensure financial accuracy, compliance, and risk management. Through systematic evaluation, we enhance transparency, detect fraud, and improve internal controls. Reliable audits strengthen business credibility, fostering trust among stakeholders, investors, and regulatory authorities.</p>
+                  </div>
+                </div>
+                <div class="card border-0 bg-faded-primary service-box" data-aos="zoom-in" data-aos-duration="400" data-aos-offset="150">
+                  <div class="card-body" style="max-width: 410px;">
+                    <!-- <i class="ai-help fs-1 text-danger d-block mb-3"></i> -->
+                    <img class="rounded-2 mb-3" src="/assets/img/banking.jpg" alt="bank_audit" />
+                    <h3 class="h4">Bank Audit</h3>
+                    <p class="fs-sm">Bank audits ensure compliance, financial accuracy, and risk management in banking operations. We conduct thorough audits to assess internal controls, detect fraud, and ensure regulatory compliance. Our services help maintain transparency, strengthen trust, and enhance the financial integrity of banking institutions.</p>
+                  </div>
+                </div>
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+                <div class="card border-0 bg-faded-warning service-box" data-aos="zoom-in" data-aos-duration="400" data-aos-offset="150">
+                  <div class="card-body" style="max-width: 410px; ">
+                    <!-- <i class="ai-dashboard fs-1 text-info d-block mb-3"></i> -->
+                    <img class="rounded-2 mb-3" src="/assets/img/taxation.jpg" alt="taxation" />
+                    <h3 class="h4">Taxation</h3>
+                    <p class="fs-sm">Taxation is a crucial aspect of financial management, ensuring compliance with legal regulations. We provide expert tax planning, filing, and advisory services to optimize tax liabilities, prevent penalties, and maximize savings while ensuring full compliance with evolving tax laws and regulations.</p>
+                  </div>
+                </div>
+                <div class="card border-0 bg-faded-danger service-box" data-aos="zoom-in" data-aos-duration="400" data-aos-offset="150">
+                  <div class="card-body" style="max-width: 410px; ">
+                    <!-- <i class="ai-help fs-1 text-danger d-block mb-3"></i> -->
+                    <img class="rounded-2 mb-3" src="/assets/img/advisory.jpg" alt="audit_and_assurance" />
+                    <h3 class="h4">Consultancy</h3>
+                    <p class="fs-sm">Consultancy services provide expert guidance on finance, taxation, and compliance. We help businesses with strategic planning, risk management, and regulatory adherence. Our insights drive growth, improve efficiency, and ensure informed decision-making for sustainable success in a dynamic business environment.</p>
+                  </div>
+                </div>
+              <!-- </div> -->
+              <!-- <div class="col" > -->
+                <div class="card border-0 bg-faded-info  service-box" data-aos="zoom-in" data-aos-duration="400" data-aos-offset="150">
+                  <div class="card-body" style="max-width: 410px; height: 100%;">
+                    <!-- <i class="ai-user-group fs-1 text-warning d-block mb-3"></i> -->
+                    <img class="rounded-2 mb-3" src="/assets/img/corporate_laws.jpg" alt="corporate_laws" />
+                    <h3 class="h4">Corporate Laws</h3>
+                    <p class="fs-sm">Corporate laws govern business operations, ensuring compliance and ethical practices. We provide expert guidance on company formation, contracts, and regulations. Our services help businesses navigate legal frameworks, mitigate risks, and operate smoothly within corporate governance and statutory requirements.</p>
+                  </div>
+                </div>
+                <div class="card border-0 bg-faded-primary service-box" data-aos="zoom-in" data-aos-duration="400" data-aos-offset="150">
+                  <div class="card-body" style="max-width: 410px; height: 100%;">
+                    <!-- <i class="ai-wallet fs-2 text-info d-block mb-3"></i> -->
+                    <img class="rounded-2 mb-3" src="/assets/img/company_formation.jpg" alt="company_formation" />
+                    <h3 class="h4">Company Formation</h3>
+                    <p class="fs-sm">Company formation involves structuring, registration, and compliance. PCV and Company assists with incorporation, approvals, and documentation, ensuring a smooth setup. Our expertise helps entrepreneurs navigate legal complexities and start operations with <br/>confidence.</p>
+                  </div>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+          
+          
+        </div>
+      </section>
+      
+
+      <!-- Downloads -->
+
+      <section class="px-4 px-md-0 container" id="downloads">
+        <h2 class="h1 contaier text-center pt-2 pt-sm-3 pt-md-4 pb-3 mt-md-2 mt-xxl-3 mb-lg-4">
+          Important Downloads
+        </h2>
+        <div class="bg-faded-info rounded-5 py-5 px-4 p-sm-5 position-relative">
+          
+          <div class="d-lg-flex align-items-center g-0 py-2 py-sm-3 py-md-4 p-xl-5">
+            <div class="order-lg-2 text-center text-lg-start ps-lg-5 mx-auto me-lg-4">
+              <h2 class="h1 mb-4">Access Essential Resources  <br class='d-none d-lg-inline'>at Your Fingertips</h2>
+              <p class="pb-3 mb-3 mb-lg-4">Stay organized with our curated list of important documents and forms. Download them easily and manage your financial needs seamlessly.</p>
+              <!-- <a class="btn btn-info d-none d-lg-inline-flex" href="#">See all downloads</a> -->
+            </div>
+            <div class="swiper marquee-swiper"
+               data-swiper-options='{
+                 "direction": "vertical",
+                 "loop": true,
+                 "speed": 1000,
+                 "allowTouchMove": true,
+                 "autoplay": {
+                   "delay": 1,
+                   "pauseOnMouseEnter": true,
+                   "disableOnInteraction": false
+                 },
+                 "freeMode": true,
+                 "freeModeMomentum": true,
+                 "slidesPerView": 8
+               }'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://cdn.visionias.in/value_added_material/8e1f4-summary-of-union-budget-2025-26.pdf" download><i class="ai-download px-2"></i>Summary of Union Budget 2025-26</a>
+              </div>
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc202521492701.pdf" download><i class="ai-download px-2"></i>Budget 2025-26 Key Highlights</a>
+              </div>
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://www.indiabudget.gov.in/doc/budget_speech.pdf" download><i class="ai-download px-2"></i>Budget 2025-26 Speech by the Finance Minister</a>
+              </div>
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://www.indiabudget.gov.in/doc/Finance_Bill.pdf" download><i class="ai-download px-2"></i>The Finance Bill, 2025</a>
+              </div>
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://www.indiabudget.gov.in/economicsurvey/doc/Infographics%20English.pdf" download><i class="ai-download px-2"></i>Economic Survey 2024-25</a>
+              </div>
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://financialservices.gov.in/beta/sites/default/files/2025-02/budget.pdf" download><i class="ai-download px-2"></i>FAQs on Union Budget 2025-26</a>
+              </div>
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://cdn.visionias.in/value_added_material/8e1f4-summary-of-union-budget-2025-26.pdf" download><i class="ai-download px-2"></i>Summary of Union Budget 2025-26</a>
+              </div>
+              <div class="swiper-slide d-flex justify-content-start">
+                <a target="_blank" href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/feb/doc202521492701.pdf" download><i class="ai-download px-2"></i>Budget 2025-26 Key Highlights</a>
+              </div>
+              
+              <!-- Add more slides as needed -->
+            </div>
+          </div>
+          </div>
+        </div>
+      </section> 
+
+     
+      <!-- Testimonials (Infinite slider)-->
+      <!-- <section class="pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+        <h2 class="h1 contaier text-center pt-2 pt-sm-3 pt-md-4 pb-3 mt-md-2 mt-xxl-3 mb-lg-4">What our clients say</h2>
+        <div class="swiper pb-4" data-swiper-options="{
+      &quot;spaceBetween&quot;: 24,
+      &quot;loop&quot;: true,
+      &quot;grabCursor&quot;: false,
+      &quot;centeredSlides&quot;: true,
+      &quot;autoplay&quot;: {
+        &quot;delay&quot;: 0,
+        &quot;disableOnInteraction&quot;: false
+        
+      },
+      &quot;freeMode&quot;: true,
+      &quot;speed&quot;: 10000,
+      &quot;freeModeMomentum&quot;: false,
+      &quot;breakpoints&quot;: {
+        &quot;0&quot;: { &quot;slidesPerView&quot;: 1 },
+        &quot;500&quot;: { &quot;slidesPerView&quot;: 2 },
+        &quot;900&quot;: { &quot;slidesPerView&quot;: 3 },
+        &quot;1300&quot;: { &quot;slidesPerView&quot;: 4 },
+        &quot;1600&quot;: { &quot;slidesPerView&quot;: 5 }
+      }
+    }">
+          <div class="swiper-wrapper" style="transition-timing-function: linear !important;">
+            <div class="swiper-slide h-auto">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/23.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Wade Warren</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star text-muted opacity-70"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet. Mauris duis eleifend faucibus amet sagittis amet consequat aucibus."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/26.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Jenny Wilson</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Netus vel, amet placerat eget sit eleifend. Urna laoreet ultricies orci feugiat amet egestas semper praesent. Risus ut porttitor metus."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/27.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Bessie Cooper</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-half text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Netus vel, amet placerat eget sit eleifend. Urna laoreet ultricies orci feugiat amet egestas semper praesent. Risus ut porttitor metus."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/32.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Ralph Edwards</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star text-muted opacity-70"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Odio viverra tristique id adipiscing varius. Leo vel tincidunt amet arcu. Auctor ipsum fames lacus vestibulum. Ultricies cras et at sed sed turpis."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/28.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Cameron Williamson</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-half text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Mauris fermentum vitae volutpat orci mattis dolor malesuada porta id. Enim, dis nisi eget tincidunt bibendum leo pulvinar in. At justo hacsit diam."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/24.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Annette Black</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Nisi et venenatis vitae, purus arcu. Integer lacus maecenas rhoncus nibh aliquam, enim sollicitudin interdum hendrerit. Proin venenatis varius."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper" dir="rtl" data-swiper-options="{
+      &quot;spaceBetween&quot;: 24,
+      &quot;loop&quot;: true,
+      &quot;grabCursor&quot;: false,
+      &quot;centeredSlides&quot;: true,
+      &quot;autoplay&quot;: {
+        &quot;delay&quot;: 0,
+        &quot;disableOnInteraction&quot;: false
+      },
+      &quot;freeMode&quot;: true,
+      &quot;speed&quot;: 10000,
+      &quot;freeModeMomentum&quot;: false,
+      &quot;breakpoints&quot;: {
+        &quot;0&quot;: { &quot;slidesPerView&quot;: 1 },
+        &quot;500&quot;: { &quot;slidesPerView&quot;: 2 },
+        &quot;900&quot;: { &quot;slidesPerView&quot;: 3 },
+        &quot;1300&quot;: { &quot;slidesPerView&quot;: 4 },
+        &quot;1600&quot;: { &quot;slidesPerView&quot;: 5 }
+      }
+    }">
+          <div class="swiper-wrapper" style="transition-timing-function: linear !important;">
+            <div class="swiper-slide h-auto" dir="ltr">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/23.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Guy Hawkins</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star text-muted opacity-70"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet. Mauris duis eleifend faucibus amet sagittis amet consequat aucibus."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto" dir="ltr">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/22.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Esther Howard</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Netus vel, amet placerat eget sit eleifend. Urna laoreet ultricies orci feugiat amet egestas semper praesent. Risus ut porttitor metus."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto" dir="ltr">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/27.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Anneta Nikson</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-half text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Netus vel, amet placerat eget sit eleifend. Urna laoreet ultricies orci feugiat amet egestas semper praesent. Risus ut porttitor metus."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto" dir="ltr">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/32.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Darrell Steward</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star text-muted opacity-70"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Odio viverra tristique id adipiscing varius. Leo vel tincidunt amet arcu. Auctor ipsum fames lacus vestibulum. Ultricies cras et at sed sed turpis."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto" dir="ltr">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/28.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Martha Stewart</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-half text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Mauris fermentum vitae volutpat orci mattis dolor malesuada porta id. Enim, dis nisi eget tincidunt bibendum leo pulvinar in. At justo hacsit diam."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto" dir="ltr">
+              <div class="card h-100 border-0 bg-secondary rounded-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4"><img class="rounded-circle" src="assets/img/avatar/24.jpg" width="60" alt="Avatar">
+                    <div class="ps-3">
+                      <div class="h5 mb-0">Kathryn Murphy</div>
+                      <div class="text-nowrap"><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning me-1"></i><i class="ai-star-filled text-warning"></i></div>
+                    </div>
+                  </div>
+                  <p class="mb-0">"Nisi et venenatis vitae, purus arcu. Integer lacus maecenas rhoncus nibh aliquam, enim sollicitudin interdum hendrerit. Proin venenatis varius."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+
+      <!-- Gallery-->
+      <section class="px-3 px-md-0 container py-5 my-lg-3 my-xl-4 my-xxl-5">
+        <div class="py-2 py-sm-3 py-md-4 my-md-2 my-xxl-3">
+          <h2 class="h1 text-center pt-xxl-1">Office Gallery</h2>
+          <p class="fs-lg text-center pb-3 mb-lg-4">A glimpse of our workspace and team, showcasing professionalism and excellence.</p>
+          <div class="gallery row g-3 g-md-4" data-video="true">
+            <div class="col-sm-6">
+              <div class="row g-3 g-md-4">
+                <div class="col-6"><a class="gallery-item d-block card-hover zoom-effect" href="assets/img/office-gallery/Office11.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/office-gallery/Office11.jpg" alt="Reception">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6"
+                ><a class="gallery-item d-block card-hover zoom-effect" href="assets/img/office-gallery/Office12.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/office-gallery/Office12.jpg" alt="Office showpiece">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/office-gallery/Office4.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/office-gallery/Office4.jpg" alt="Office">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row g-3 g-md-4">
+                <div class="col-6 order-sm-2">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/office-gallery/Office10.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/office-gallery/Office10.jpg" alt="Bappa's blessings">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 order-sm-3">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/office-gallery/Office7.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/office-gallery/Office7.jpg" alt="CA Paras Vijapure">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 order-sm-1">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/office-gallery/Office8.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/office-gallery/Office8.jpg" alt="Cabin">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="text-center pb-lg-2 pb-xl-3 pb-xxl-3 pt-4 pt-md-5 mt-3 mt-md-0">
+            <a class="btn btn-lg btn-outline-info" href="#">About Us<i class="ai-image ms-2"></i></a>
+          </div> -->
+        </div>
+      </section>
+      <!-- Contact form-->
+      <section class="px-3 px-md-0 bg-info ignore-dark-mode position-relative py-5">
+        <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-5"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-15" style="background-image: url(assets/img/noise.png); mix-blend-mode: soft-light;">
+          
+        </div>
+        <div class="container position-relative zindex-2 pt-sm-2 pb-3 py-md-4 py-lg-5">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-lg-5 col-xxl-4 pb-2 pb-md-0 mb-4 mb-md-0 position-relative" style="height: 100%;">
+              <h2 class="display-5 text-light mb-4 mb-md-5">
+                Connect with Us for Expert Assistance
+                <h2>
+                <div class="d-none d-xl-flex justify-content-center " data-aos="fade-up" data-aos-duration="400" data-aos-offset="150" style="position: absolute; right: -130px; bottom: -50px;">
+                  <svg class="text-light ms-n4" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor">
+                      
+                    </path>
+                  </svg>
+                </div>
+            </div>
+            <div class="col-md-6 offset-lg-1 offset-xxl-2 p-0">
+              <div class="card bg-white border-0 p-1 p-sm-2 p-lg-3" >
+                <form id="connect-form" class="card-body needs-validation p-4" novalidate>
+                  <div class="mb-3 mb-sm-4">
+                    <label class="form-label fs-base" for="email">Email</label>
+                    <input class="form-control form-control-lg" type="email" placeholder="Email address" name="email" required id="email">
+                    <div class="invalid-feedback">Please provide a valid email address!</div>
+                  </div>
+                  <div class="mb-3 mb-sm-4">
+                    <label class="form-label fs-base" for="name">Name</label>
+                    <input class="form-control form-control-lg" type="text" placeholder="Your name" name="name" required id="name">
+                    <div class="invalid-feedback">Please enter your name!</div>
+                  </div>
+                  <div class="mb-3 mb-sm-4">
+                    <label class="form-label fs-base" for="message">Message</label>
+                    <textarea class="form-control form-control-lg" rows="5" placeholder="Your message" name="message" required id="message"></textarea>
+                    <div class="invalid-feedback">Please enter your message!</div>
+                  </div>
+                  <button class="btn btn-lg btn-info" type="submit">Send request</button>
+                </form>
+
+                  <div class="px-4">
+                    <div id="connect-form-success" class="alert alert-primary alert-dismissible fade show d-none" role="alert">
+    Thank you! We will get back to you shortly.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer px-3 px-md-0 pb-3 pt-sm-3 ">
+      <div class="container pb-2 pb-md-4 pt-5">
+        <div class="d-md-flex align-items-center justify-content-between pb-1 pb-md-0 mb-4 mb-md-5" style="flex-direction: row;">
+          <div class="d-flex flex-column flex-md-col align-items-start justify-content-start justify-content-md-between">
+            <a class="navbar-brand d-inline-flex text-nav py-0 mb-2 mb-md-2" href="index.html">
+              <image src="assets/img/pcv_logo.png" class="custom-logo" alt="pcv_and_company">
+            </a>
+            <nav class="nav d-none d-md-flex justify-content-start justify-content-md-start pb-sm-2 pb-md-0 mb-4 mb-md-0 ms-md-n3">
+              <a class="nav-link py-1 px-0 mx-3 ml-0 ml-md-3" href="/index.html">Home</a>
+              <a class="nav-link py-1 px-0 mx-3" href="/about-us.html">About Us</a>
+              <a class="nav-link py-1 px-0 mx-3" href="/services.html">Services</a>
+              <a class="nav-link py-1 px-0 mx-3" href="/careers.html">Careers</a>
+            </nav>
+           
+          </div>
+          <div class="d-flex justify-content-center justify-content-md-start me-md-n2">
+            <div class="col">
+              <h3 class="h6 mb-2 mt-4 mt-md-2">Pune, Maharashtra, India.</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex mb-2"><i class="ai-mail text-info me-2" style="font-size: 18px;"></i><a class="nav-link fw-normal p-0 mt-n1" href="mailto:info@pcvandcompany.com">info@pcvandcompany.com</a></li>
+                <li class="d-flex mb-2 text-lead" style="font-weight: 400; color: black;"><i class="ai-map-pin text-info me-2" style="font-size: 18px;"></i>404, Akshay Landmark, Sinhagad Rd, Pune 411 030</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row flex-column-reverse  align-items-center justify-content-between text-center">
+          <div class="fs-sm mb-0 w-100 d-flex justify-content-start"><span class="opacity-70"> All other information &copy; 2025 PCV and Company. </span>
+        </div>
+           <div class="d-flex w-100 justify-content-start justify-content-md-end me-md-n2 mb-3 mb-md-0" style="gap:12px">
+            <a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle" href="#"><i class="ai-facebook"></i></a>
+            <a class="btn btn-icon btn-sm btn-secondary btn-twitter rounded-circle" href="#"><i class="ai-twitter"></i></a>
+            <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="#"><i class="ai-linkedin"></i></a>
+            </div>
+            
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg><i class="ai-arrow-up"></i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+
+    <script>
+      console.log("Hello from the console!");
+    const form = document.getElementById('connect-form');
+    const message = document.getElementById('connect-form-success');
+
+    form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    if (!formData.get('email') || !formData.get('name') || !formData.get('message')) {
+      return;
+    }
+
+    try {
+      const response = await fetch('https://formspree.io/f/xnndrqyv', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+
+      if (response.ok) {
+        message.classList.remove('d-none');
+        // form.reset();
+      } 
+      // else {
+      //   message.textContent = 'Oops! Something went wrong.';
+      // }
+    } catch (error) {
+      // message.textContent = 'There was a problem sending your message.';
+    }
+  });
+  </script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+    
+  </body>
+</html>

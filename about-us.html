@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PCV and Company | Chartered Accountants</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="PCV and Company - Chartered Accountants firm offering audit, taxation, compliance, and advisory services in Pune and beyond.">
+    <meta name="keywords" content="PCV, pcv and company,CA Paras Vijapure, Chartered Accountant, audit, taxation, compliance, corporate laws, financial services, advisory, GST, income tax, business consulting, company formation, accounting, financial planning, risk management, statutory audit, tax filing, legal services, Pune CA firm">  
+    <meta name="author" content="PCV and Company">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon"  sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon"  sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" color="#6366f1" href="assets/favicon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="white">
+    <!-- Theme mode-->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+    
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      .custom-nav-link:hover{
+  color: #3377c4!important;
+  } 
+
+  .custom-logo{
+  width: 200px;
+}
+
+@media (min-width: 576px) {
+  .custom-logo{
+    width: 220px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-logo{
+    width: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-logo{
+    width: 260px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-logo{
+    width: 280px;
+  }
+  
+}
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+      })();
+      
+    </script>
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <div class="">
+        <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
+        <header class="custom_navbar navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand pe-sm-3" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <image src="assets/img/pcv_logo.png" class="custom-logo" alt="pcv_logo" />
+            </span>
+            </a>
+            <a class="btn btn-info btn-md order-lg-3 d-none d-sm-inline-flex px-4" href="mailto:info@pcvandcompany.com?subject=Request%20Callback"  rel="noopener">
+              <i class="ai-mail fs-xl me-2 ms-n1"></i>Write a mail
+            </a>
+            <button class="navbar-toggler ms-sm-3 text-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon" ></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="index.html">Home</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/about-us.html">About Us</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/services.html">Services</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/contact-us.html">Contact Us</a></li>
+                <li class="nav-item "><a class="custom-nav-link nav-link" href="/careers.html"><span class="badge bg-info fs-sm">We are Hiring!</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <!-- Page content-->
+      <!-- Hero-->
+      <!-- About-->
+      <section class="container position-relative zindex-3 pt-5 px-4 px-md-2" style="margin-top: 80px!important;">
+        <div class="rounded-5 overflow-hidden"> 
+          <div class="jarallax ratio ratio-16x9" data-jarallax data-speed="0.6">
+            <div class="" >
+              <img src="assets/img/office-gallery/Office2.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-n2 mt-sm-0 mt-md-2 mt-lg-4 mt-xl-5">
+          <div class="col-md-6 col-lg-5">
+            <div class="fs-sm text-uppercase mb-3">What we do</div>
+            <h2 class="display-6">We provide tax, audit, compliance, and financial advisory services.</h2>
+          </div>
+          <div class="col-md-6 col-xl-5 offset-lg-1 offset-xl-1 pt-1 pt-sm-2 pt-md-5">
+            <p class="">Established in 2018, <strong>PCV & COMPANY</strong> is a full-service Chartered Accountants firm based in <strong>Pune</strong>, specializing in <strong> Assurance, Taxation, and Advisory </strong> services. We cater to corporate and cooperative clients at both domestic and international levels, ensuring compliance, financial efficiency, and strategic growth.
+              <br/>
+              <br/>
+              With deep industry expertise, we provide a <strong> comprehensive range of legal, taxation, and financial solutions</strong> tailored to businesses across commercial, industrial, and financial sectors. Our commitment goes beyond compliance—we focus on driving value, optimizing finances, and supporting long-term business success.
+              <br/>
+              <br/>
+              At PCV & Company, we believe in <strong> building strong partnerships </strong> rather than being just service providers. By offering <strong> end-to-end financial and legal solutions under one roof</strong>, we empower businesses to navigate complexities with confidence and achieve sustainable growth.
+          </div>
+        </div>
+      </section>
+      <!-- How we work (Steps)-->
+      <section class="container pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5 pb-5 mb-5">
+        <h1 class="text-center" > How We Work</h1>
+        <div class="row align-items-center pt-2 pt-sm-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
+          <div class="col-md-6 col-xl-5 pb-3 pb-md-0 mb-4 mb-md-0">
+            <div class="ratio ratio-1x1 d-flex align-items-center position-relative rounded-circle overflow-hidden bg-size-cover mx-auto" style="max-width: 530px; background-image: url(assets/img/office-gallery/Office10.jpg);background-position: center;">
+              <div class="bg-black position-absolute top-0 start-0 w-100 h-100 opacity-50"></div>
+              <div class="dark-mode position-relative zindex-2 p-4">
+                <div class="text-center mx-auto" style="max-width: 275px;">
+                  <!-- <span class="d-block fs-sm text-uppercase mb-3">How we work</span> -->
+                  <h2 class="display-6 mb-0">The key to success</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-5 offset-xl-1">
+            <div class="ps-md-4 ps-xl-0">
+              <div class="steps steps-hoverable">
+                <div class="step py-3 py-xl-4">
+                  <div class="step-number">
+                    <div class="step-number-inner">01</div>
+                  </div>
+                  <div class="step-body">
+                    <h3 class="h5 pb-1 mb-2">Understanding Client Needs</h3>
+                    <p class="mb-0">We analyze your financial and compliance needs to provide tailored solutions for your business growth.</p>
+                  </div>
+                </div>
+                <div class="step py-3 py-xl-4">
+                  <div class="step-number">
+                    <div class="step-number-inner">02</div>
+                  </div>
+                  <div class="step-body">
+                    <h3 class="h5 pb-1 mb-2">Strategic Planning & Execution</h3>
+                    <p class="mb-0">Our experts craft and implement strategies to optimize tax, audit, and financial compliance seamlessly.</p>
+                  </div>
+                </div>
+                <div class="step py-3 py-xl-4">
+                  <div class="step-number">
+                    <div class="step-number-inner">03</div>
+                  </div>
+                  <div class="step-body">
+                    <h3 class="h5 pb-1 mb-2">Continuous Monitoring & Compliance</h3>
+                    <p class="mb-0">We ensure ongoing compliance with tax laws and corporate regulations through regular reviews and audits.</p>
+                  </div>
+                </div>
+                <div class="step py-3 py-xl-4">
+                  <div class="step-number">
+                    <div class="step-number-inner">04</div>
+                  </div>
+                  <div class="step-body">
+                    <h3 class="h5 pb-1 mb-2">Growth & Advisory Support</h3>
+                    <p class="mb-0">Beyond compliance, we provide insights and strategies to help businesses scale and maximize profitability.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Testimonials-->
+
+      <!-- <section class="pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5">
+        <div class="container pt-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
+          <div class="fs-sm text-uppercase mb-3">Testimonials</div>
+          <h2 class="display-6 pb-3 mb-lg-4">What our clients say</h2>
+          <div class="card border-0 bg-secondary overflow-hidden">
+            <div class="card-body position-relative zindex-2 px-lg-0 py-lg-5">
+              <div class="row py-3 py-sm-1 py-md-3 py-lg-4 py-xl-4">
+                <div class="col-md-4 col-lg-3 offset-lg-1 mb-3 mb-md-0">
+                  <div class="binded-content">
+                    <div class="binded-item active" id="author1"><img class="d-block rounded-circle mb-3" src="assets/img/avatar/21.jpg" width="86" alt="Lilianna Bocouse">
+                      <h4 class="mb-0">Lilianna Bocouse</h4>
+                      <p class="fs-lg text-muted mb-0">Head of Marketing</p>
+                    </div>
+
+                    <div class="binded-item" id="author2"><img class="d-block rounded-circle mb-3" src="assets/img/avatar/33.jpg" width="86" alt="Darell Steward">
+                      <h4 class="mb-0">Darell Steward</h4>
+                      <p class="fs-lg text-muted mb-0">Project Manager</p>
+                    </div>
+
+                    <div class="binded-item" id="author3"><img class="d-block rounded-circle mb-3" src="assets/img/avatar/34.jpg" width="86" alt="Annette Black">
+                      <h4 class="mb-0">Annette Black</h4>
+                      <p class="fs-lg text-muted mb-0">Lead Designer</p>
+                    </div>
+                    
+                    <div class="binded-item" id="author4"><img class="d-block rounded-circle mb-3" src="assets/img/avatar/35.jpg" width="86" alt="Ralph Edwards">
+                      <h4 class="mb-0">Ralph Edwards</h4>
+                      <p class="fs-lg text-muted mb-0">CEO, Co-Founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 col-lg-7">
+                  <div class="swiper" data-swiper-options="{
+                  &quot;spaceBetween&quot;: 40,
+                  &quot;loop&quot;: true,
+                  &quot;autoHeight&quot;: true,
+                  &quot;bindedContent&quot;: true,
+                  &quot;pagination&quot;: {
+                    &quot;el&quot;: &quot;#testimonials-bullets&quot;,
+                    &quot;clickable&quot;: true
+                  }
+                }">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" data-swiper-binded="#author1">
+                        <p class="text-dark fs-lg mb-0">“Around provides us with the detailed and accurate data we need to make strategic decisions. All tools are constantly being improved and contain a lot of useful and interesting information. Thanks to Around, we can constantly analyze our big data quickly and efficiently.”</p>
+                      </div>
+
+                      <div class="swiper-slide" data-swiper-binded="#author2">
+                        <p class="text-dark fs-lg mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac pretium dui. Aliquam rutrum justo lorem, in efficitur odio efficitur vel. Integer mattis, neque malesuada sagittis porttitor, enim tortor ullamcorper diam, id eleifend sem mauris at turpis. Curabitur sed nisi nec ligula dictum maximus eu ut ante.”</p>
+                      </div>
+
+                      <div class="swiper-slide" data-swiper-binded="#author3">
+                        <p class="text-dark fs-lg mb-0">“Quisque rutrum sit amet magna sit amet tristique. Vivamus rhoncus ac purus vitae convallis. Aliquam erat volutpat. Proin egestas, mauris ut semper semper, ipsum felis mattis ligula, et porttitor ante arcu nec ante. Aliquam congue est eu turpis sollicitudin, et ullamcorper tortor aliquam.”</p>
+                      </div>
+
+                      <div class="swiper-slide" data-swiper-binded="#author4">
+                        <p class="text-dark fs-lg mb-0">“Vestibulum faucibus lectus eget augue pharetra, quis semper lectus gravida. Vestibulum pretium in elit sed iaculis. Curabitur elementum turpis at ipsum molestie, id maximus odio tincidunt. Praesent id lacinia orci. Phasellus at varius arcu. Ut nec lobortis velit. Mauris vel risus quis lacus placerat fringilla.”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination position-relative bottom-0 pt-4 mt-2 mt-md-3" id="testimonials-bullets" ></div>
+        </div>
+      </section> -->
+     
+    </main>
+    <!-- Footer-->
+    
+    <footer class="footer px-3 px-md-0 pb-3 pt-sm-3 ">
+      <div class="container pb-2 pb-md-4 pt-5">
+        <div class="d-md-flex align-items-center justify-content-between pb-1 pb-md-0 mb-4 mb-md-5" style="flex-direction: row;">
+          <div class="d-flex flex-column flex-md-col align-items-start justify-content-start justify-content-md-between">
+            <a class="navbar-brand d-inline-flex text-nav py-0 mb-2 mb-md-2" href="index.html">
+              <image src="assets/img/pcv_logo.png" class="custom-logo" alt="pcv_and_company">
+            </a>
+            <nav class="nav d-none d-md-flex justify-content-start justify-content-md-start pb-sm-2 pb-md-0 mb-4 mb-md-0 ms-md-n3">
+              <a class="nav-link py-1 px-0 mx-3 ml-0 ml-md-3" href="/index.html">Home</a>
+              <a class="nav-link py-1 px-0 mx-3" href="/about-us.html">About Us</a>
+              <a class="nav-link py-1 px-0 mx-3" href="/services.html">Services</a>
+              <a class="nav-link py-1 px-0 mx-3" href="/careers.html">Careers</a>
+            </nav>
+           
+          </div>
+          <div class="d-flex justify-content-center justify-content-md-start me-md-n2">
+            <div class="col">
+              <h3 class="h6 mb-2 mt-4 mt-md-2">Pune, Maharashtra, India.</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex mb-2"><i class="ai-mail text-info me-2" style="font-size: 18px;"></i><a class="nav-link fw-normal p-0 mt-n1" href="mailto:info@pcvandcompany.com">info@pcvandcompany.com</a></li>
+                <li class="d-flex mb-2 text-lead" style="font-weight: 400; color: black;"><i class="ai-map-pin text-info me-2" style="font-size: 18px;"></i>404, Akshay Landmark, Sinhagad Rd, Pune 411 030</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row flex-column-reverse  align-items-center justify-content-between text-center">
+          <div class="fs-sm mb-0 w-100 d-flex justify-content-start"><span class="opacity-70"> All other information &copy; 2025 PCV and Company. </span>
+        </div>
+           <div class="d-flex w-100 justify-content-start justify-content-md-end me-md-n2 mb-3 mb-md-0" style="gap:12px">
+            <a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle" href="#"><i class="ai-facebook"></i></a>
+            <a class="btn btn-icon btn-sm btn-secondary btn-twitter rounded-circle" href="#"><i class="ai-twitter"></i></a>
+            <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="#"><i class="ai-linkedin"></i></a>
+            </div>
+            
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg><i class="ai-arrow-up"></i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
